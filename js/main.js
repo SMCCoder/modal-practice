@@ -21,6 +21,7 @@ requirejs([
     'bootstrap',
     'js/modal'
 ],function($, d3, bootstrap, Modal) {
+
   var width = 960,
     height = 500;
 
@@ -81,7 +82,18 @@ function mousedown() {
   force.resume();
 }
 
-var my_modal = new Modal("Button","times","Title","Body","Close","Change");
+var my_modal = new Modal("Button","colooors","Settings","Change the color!","Close","Color");
 my_modal.add_modal($("body"));
 
+$('div').click(function() {
+$("circle.node").css('fill','violet');
+});
+
+/*var second_modal = new Modal("2nd Button","more coloooors","Settings","Change the color to blue!","Close","Color");
+second_modal.add_modal($("body"));
+
+$('second_modal.div').click(function() {
+$("circle.node").css('fill','blue');
+});
+*/
 });

@@ -87,10 +87,4 @@ define([
 
   return Modal;
 
-  $(document).ready(function() {
-  $('settings').click(function() {
-    $("circle.node").css('fill','red');
-  });
-});
-
 });
